@@ -3,7 +3,11 @@ import './Card.css';
 
 const PromotionCard = ({ promotion }) => (
   <div className="promotion-card">
-    <img src={promotion.imageUrl} alt="Url da Imagem" className="promotion-card__image"/>
+    <img 
+      src={promotion.imageUrl} 
+      alt={promotion.title} 
+      className="promotion-card__image"
+    />
     <div className="promotion-card__info">
       <h1 className="promotion-card__title">{promotion.title}</h1>
       <span className="promotion-card__price">{promotion.price}</span>
